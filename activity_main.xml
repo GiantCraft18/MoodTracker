@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📊 Трекер настроения"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#00E5FF"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Как ты себя чувствуешь сегодня?"
+        android:textSize="15sp"
+        android:textColor="#AAAAAA"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Ряд карточек (премиум) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <!-- Карточка: 😊 -->
+        <TextView
+            android:id="@+id/moodHappy"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="😊"
+            android:textSize="32sp"
+            android:background="#1A1A1A"
+            android:gravity="center"
+            android:radius="16dp"
+            android:elevation="6dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Карточка: 😞 -->
+        <TextView
+            android:id="@+id/moodSad"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="😞"
+            android:textSize="32sp"
+            android:background="#1A1A1A"
+            android:gravity="center"
+            android:radius="16dp"
+            android:elevation="6dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Карточка: 😡 -->
+        <TextView
+            android:id="@+id/moodAngry"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="😡"
+            android:textSize="32sp"
+            android:background="#1A1A1A"
+            android:gravity="center"
+            android:radius="16dp"
+            android:elevation="6dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Карточка: 😐 -->
+        <TextView
+            android:id="@+id/moodNeutral"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="😐"
+            android:textSize="32sp"
+            android:background="#1A1A1A"
+            android:gravity="center"
+            android:radius="16dp"
+            android:elevation="6dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Карточка: 😴 -->
+        <TextView
+            android:id="@+id/moodTired"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="😴"
+            android:textSize="32sp"
+            android:background="#1A1A1A"
+            android:gravity="center"
+            android:radius="16dp"
+            android:elevation="6dp"
+            android:layout_marginEnd="8dp" />
+    </LinearLayout>
+
+    <!-- Раздел истории -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1A1A1A"
+        android:padding="16dp"
+        android:radius="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📅 История"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#00E5FF"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvHistoryContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пока нет записей..."
+            android:textColor="#AAAAAA"
+            android:textSize="14sp"
+            android:padding="4dp" />
+    </LinearLayout>
+
+</LinearLayout>
